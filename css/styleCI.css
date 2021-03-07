@@ -1,0 +1,58 @@
+/*Contains code borrowed from w3schools.com, stackoverflow.com, and was greatly influenced by 
+Lee Johnson*/
+table 
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, td, th 
+{
+    border: 1px solid black;
+    padding: 1%;
+}
+
+th {text-align: left;}
+
+.header
+{
+    min-height: 100%;
+    padding: 3%;
+    background-image: url(../images/unca_mountain.png), url(../images/unca_mountain2.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right top;
+    background-size: 40% 100%, 60% 100%;
+    text-align: center;
+    color: white;
+    font-size: 150%;
+}
+
+.topnav {
+  position: relative;
+  background-color: #161c20;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #003ea5;
+  color: white;
+}
+
+.topnav-right 
+{
+  float: right;
+}
+
+html, body
+{
+    min-height: 100%;
+}

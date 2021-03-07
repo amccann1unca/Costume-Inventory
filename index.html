@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--This is the first point of contact for the user. It prompts the user to
+    enter their login credentials. Their credentials are sent to the login script.-->
+<html>
+    <head>
+        <title>Costume Inventory</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, height=100%, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styleCI.css">
+    </head>
+    <div class="header">
+            <h1>UNCA Drama Department</h1>
+    </div>
+    <body>  
+        <form action="scripts/login.php" method="post">
+            <h2>Please Login</h2>
+            <u><b>Username</b></u><br>
+                <input name="username" required><br><br>
+            <u><b>Password</b></u><br>
+                <input type="password" name="password" required><br><br>
+                <input type="submit" value="Login">
+        </form>
+    </body>
+</html>
