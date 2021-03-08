@@ -1,5 +1,11 @@
 <?php
-    /* This page requires the user to reenter the pieceID of the costume to be
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: deleteConfirm.php
+     * 
+     * This page requires the user to reenter the pieceID of the costume to be
 deleted. It also saves the original entry in a sessiion variable for comparison 
 in the delete.php script. */
 

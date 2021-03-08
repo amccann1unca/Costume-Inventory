@@ -1,5 +1,11 @@
 <?php
-    /* Recieves input from searchInput.php. First the script builds an array that
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: search.php
+     * 
+     * Recieves input from searchInput.php. First the script builds an array that
 represents the search the user wants performed. This done by checking each form 
 input for being empty. If it is empty it is skipped and if it is not it is added
 to the array mentioned before. In the array the keys directly represent the column

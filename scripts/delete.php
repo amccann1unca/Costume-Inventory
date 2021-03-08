@@ -1,5 +1,11 @@
 <?php
-    /* Recieves initial user input from deleteInput and the confirmation from 
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: delete.php
+     * 
+     * Recieves initial user input from deleteInput and the confirmation from 
 deleteInputConfirm.php and compares them to be sure match. If they match, a DELETE
 query is sent to the database to delete the costume piece with the matching pieceID. 
 */

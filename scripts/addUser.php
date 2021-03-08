@@ -1,5 +1,11 @@
 <?php
-    /* Receives input from addUserInput.php. It creates a username from the 
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: addUser.php
+     * 
+     * Receives input from addUserInput.php. It creates a username from the 
 email, by taking all the characters before the @ symbol. Then the first name,
 last name, username, email, password, and user type are added to the database via
 an INSERT query. */

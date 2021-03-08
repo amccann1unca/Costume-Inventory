@@ -1,5 +1,11 @@
 <?php
-    /* This function is called by search with the input array passed in the call.
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: queryGenerator.php
+     * 
+     * This function is called by search with the input array passed in the call.
 First the keys of the input array are put into thier own array. These keys correspond 
 with the column names in the database. Next is a switch statement with 9 cases 
 for each possible number of search criteria entered. Each case builds a query 

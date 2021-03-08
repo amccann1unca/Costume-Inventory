@@ -1,5 +1,11 @@
 <?php
-    /* Recieves from the user details of a user to be deleted. The form recieves
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: deleteUserInput.php
+     * 
+     * Recieves from the user details of a user to be deleted. The form recieves
 data for first name, last name, username, and account type. This data is passed 
 to deleteUserConfirm.php. */
 

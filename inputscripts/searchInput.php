@@ -1,5 +1,11 @@
 <?php
-    /* Recieves search criteria fromt he user to be sent to search.php. These
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: searchInput.php
+     * 
+     * Recieves search criteria fromt he user to be sent to search.php. These
 critieria include the status of the item, it's id, title, type, time period,
 characters body type, size, and color. The only criteria required is the check
 out status, the rest can be left blank.*/

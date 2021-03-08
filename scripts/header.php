@@ -1,5 +1,11 @@
 <?php
-    /* This script is included on all pages that output to the user to control 
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: header.php
+     * 
+     * This script is included on all pages that output to the user to control 
 the look of the site. This page also controls the view of each user type, 
 Administrators see all navigation options, Staff can only see 4 functions and
 students 3. */

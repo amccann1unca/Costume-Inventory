@@ -1,5 +1,11 @@
 <?php
-    /*The home is the second page the user sees. It welcomes the user and gives
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: home.php
+     * 
+     * The home is the second page the user sees. It welcomes the user and gives
 a few guidelines for using the website.*/
 
     session_start();

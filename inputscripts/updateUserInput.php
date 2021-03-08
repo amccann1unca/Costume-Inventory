@@ -1,5 +1,11 @@
 <?php
-    /* Receives input from user for updating a user account. To verify the user, 
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: updateUSerInput.php
+     * 
+     * Receives input from user for updating a user account. To verify the user, 
 the form requires the users first name, last name, username, and account type.
 Below the user information, there is space for the attribute to be changed email,
 password, or account type. The following page, updateUser.php is designed to 

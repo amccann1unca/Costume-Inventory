@@ -1,5 +1,11 @@
 <?php
-    /* Recieves user input from insertInput.php. First the inputs for type, body 
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: insert.php
+     * 
+     * Recieves user input from insertInput.php. First the inputs for type, body 
 type, material, and color are formatted to have the first letter upper case. Color
 is checked for spaces and all of them are removed. Next inputs time period and 
 size are formatted. Any letters in them are forced to uppercase and any spaces 

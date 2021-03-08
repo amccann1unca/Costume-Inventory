@@ -1,5 +1,11 @@
 <?php
-    /* Recieves the original input from deleteUserInput and saves in a session 
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: deleteUserConfirm.php
+     * 
+     * Recieves the original input from deleteUserInput and saves in a session 
 variable for comparision in deleteUser.php.  The form requires the user to reenter
 the user details previously given and passes them to deleteUser.php. */
 

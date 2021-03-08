@@ -1,5 +1,11 @@
 <?php
-    /* Receives orignal input from deleteUserInput.php and deleteUserConfirm.php
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: deleteUser.php
+     * 
+     * Receives orignal input from deleteUserInput.php and deleteUserConfirm.php
 compares them to ensure they match. Then using a DELETE query that compares first
 name, user name, and usertype to specify what user to delete. */
 

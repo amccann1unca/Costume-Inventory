@@ -1,5 +1,11 @@
 <?php
-    /* This script destroys the current session and redirects the user to the login screen, index.html. */
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: logout.php
+     * 
+     * This script destroys the current session and redirects the user to the login screen, index.html. */
 
     session_start();
     

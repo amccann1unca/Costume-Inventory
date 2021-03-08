@@ -1,5 +1,11 @@
 <?php
-    /* Holds the login information for connecting to the database and creates 
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: config.php
+     * 
+     * Holds the login information for connecting to the database and creates 
 the connection to the database. */
 
 $host="unca-csci.net";

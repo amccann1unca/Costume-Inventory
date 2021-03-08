@@ -1,5 +1,11 @@
 <?php
-    /*The login script does not interface with the user. It receives the users 
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: login.php
+     * 
+     * The login script does not interface with the user. It receives the users 
 credentials from index.html and attempts to verify them against the user 
 database. The current users username, first name, and user type are save in the
 session array. If the user inputs the wrong user name, password, or both they 

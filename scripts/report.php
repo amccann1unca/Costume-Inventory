@@ -1,5 +1,11 @@
 <?php
-    /*  Recieves the filename from search.php and pulls the output array from the
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: report.php
+     * 
+     * Recieves the filename from search.php and pulls the output array from the
 session array. Then goes on to force a header change that triggers the download 
 of the CSV. Inorder for the array to be converted to a CSV it must be added row 
 by row to the PHP generated file for ouput.

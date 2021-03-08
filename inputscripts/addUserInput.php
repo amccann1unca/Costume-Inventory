@@ -1,5 +1,11 @@
 <?php
-    /* Recives the details of user to be added; fistname, lastname, email,
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: addUserInput.php
+     * 
+     * Recives the details of user to be added; fistname, lastname, email,
 password, and account type. This information is sent to addUser.php.*/
 
    include("../scripts/header.php"); 

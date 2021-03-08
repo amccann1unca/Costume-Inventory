@@ -1,5 +1,11 @@
 <?php
-    /* Receives the details of a costume piece to be added to the database.
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: insertInput.php
+     * 
+     * Receives the details of a costume piece to be added to the database.
 All are required for successful submission of the form. The form reterieves data
 for title, type, time period, the characters body type, size, material, and color.*/
 

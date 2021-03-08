@@ -1,5 +1,11 @@
 <?php
-    /* Simple script that displays all users recorded in the User database based
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: users.php
+     * 
+        Simple script that displays all users recorded in the User database based
 on the current users type. It displays the first name, last name, and email of 
 each user. Administrators can see all users, staff are limited to other staff members
 and all students, and students can only see other students.*/

@@ -1,5 +1,11 @@
 <?php
-    /* Receives user data from updateUserInput.php. Takes this information and
+    /* Project Title: Costume Inventory
+     * Author: Adam McCann
+     * Course: Senior Project
+     * Date: 4/26/2021
+     * File: updateUser.php
+     * 
+     * Receives user data from updateUserInput.php. Takes this information and
 searches the database for the user information given. Once the user is found, the keys of
 the input array are examined to determine which case of a switch statement is to
 be taken. The cases are for changing the users email, password, or user type.
