@@ -21,7 +21,7 @@
     </head>
     <body>
         <div class="header">
-            <h1>UNCA Drama Department</h1>
+            <h1>UNCA Costume Department</h1>
         </div>
         <h1>You have been logged out.</h1>
         <form action="../index.html">

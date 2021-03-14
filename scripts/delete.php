@@ -24,11 +24,21 @@ query is sent to the database to delete the costume piece with the matching piec
             
             $firstInput = mysqli_real_escape_string($con, $_SESSION['firstInput']);
             $pID = mysqli_real_escape_string($con, $_REQUEST['pieceID']);
+            $uName = $_SESSION['user'];
             
             if($firstInput == $pID)
             {
-                $query1 = "DELETE FROM Piece WHERE pieceID = '$pID'";
-                mysqli_query($con, $query1);
+                $query2 = "INSERT INTO DeletedPieces (pieceID, Users_userName)
+                           VALUES ('$pID','$uName');";
+                mysqli_query($con, $query2);
+                
+                if (mysqli_errno($con) != 0) 
+                {
+                    echo mysqli_errno($con) . ": " . mysqli_error($con) . "\n";
+                }
+                
+                $query3 = "DELETE FROM Piece WHERE pieceID = '$pID';";
+                mysqli_query($con, $query3);
         
                 if (mysqli_errno($con) != 0) 
                 {

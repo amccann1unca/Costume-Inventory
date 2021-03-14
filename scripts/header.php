@@ -23,7 +23,7 @@ students 3. */
     </head>
     <body>
         <div class="header">
-            <h1>UNCA Drama Department</h1>
+            <h1>UNCA Costume Department</h1>
             <h5><?php echo "Logged in as: " . $_SESSION['user'] ?></h5>
         </div>
         
@@ -49,8 +49,8 @@ students 3. */
             {
                 echo "<div class=\"topnav\">";
                 echo "<a href=\"../scripts/home.php\">Home</a>";
-                echo "<a href=\"../scripts/searchInput.php\">Search</a>";
-                echo "<a href=\"../scripts/insertInput.php\">Add</a>";
+                echo "<a href=\"../inputscripts/searchInput.php\">Search</a>";
+                echo "<a href=\"../inputscripts/insertInput.php\">Add</a>";
                 echo "<a href=\"../scripts/users.php\">Users</a>";
                     echo "<div class=\"topnav-right\">";
                     echo "<a href=\"../scripts/logout.php\">Logout</a>";
@@ -62,7 +62,7 @@ students 3. */
             {
                 echo "<div class=\"topnav\">";
                 echo "<a href=\"../scripts/home.php\">Home</a>";
-                echo "<a href=\"../scripts/searchInput.php\">Search</a>";
+                echo "<a href=\"../inputscripts/searchInput.php\">Search</a>";
                 echo "<a href=\"../scripts/users.php\">Users</a>";
                     echo "<div class=\"topnav-right\">";
                     echo "<a href=\"../scripts/logout.php\">Logout</a>";
@@ -72,6 +72,3 @@ students 3. */
         ?>
     </body>
 </html>
-
-
-

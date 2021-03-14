@@ -17,7 +17,7 @@ recieve only change at a time. */
 <!DOCTYPE html>
 <html>
     <body>
-        <form action="scripts/updateUser.php" method="post">
+        <form action="../scripts/updateUser.php" method="post">
             <h2>Details of the User to be updated</h2>
             <u><b>First Name</b></u><br>
                 <input type="text" name="firstName" required><br><br>

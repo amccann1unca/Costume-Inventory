@@ -29,6 +29,7 @@ piece is added to the database via an INSERT query. */
 
         require_once ("config.php");
 
+        $uName = $_SESSION['user'];
         $title = mysqli_real_escape_string($con, $_REQUEST['title']);
         $type = mysqli_real_escape_string($con, $_REQUEST['type']);
         $time = mysqli_real_escape_string($con, $_REQUEST['time']);
@@ -36,6 +37,8 @@ piece is added to the database via an INSERT query. */
         $size = mysqli_real_escape_string($con, $_REQUEST['size']);
         $material = mysqli_real_escape_string($con, $_REQUEST['material']);
         $color = mysqli_real_escape_string($con, $_REQUEST['color']);
+        $location = mysqli_real_escape_string($con, $_REQUEST['location']);
+        $care = mysqli_real_escape_string($con, $_REQUEST['care']);
         
         //Formats $type, $body, $material, and $color to be of the form "Red"
         $type = strtolower($type);
@@ -44,6 +47,7 @@ piece is added to the database via an INSERT query. */
         $body = ucfirst($body);
         $material = strtolower($material);
         $material = ucfirst($material);
+        
         //Removes any spaces in color
         $color = str_replace(" ", "", $color);
         $color = strtolower($color);
@@ -70,7 +74,8 @@ piece is added to the database via an INSERT query. */
             $id = $time . $type . $size . $material . $color . rand(0, 999);
         }
 
-        $query2 = "INSERT INTO Piece (pieceID, title, type, timePeriod, bodyType, size, material, color) VALUES ('$id','$title','$type','$time','$body','$size','$material','$color')";
+        $query2 = "INSERT INTO Piece (pieceID, title, type, timePeriod, bodyType, size, material, color, storageLocation, care, Users_userName)
+                   VALUES ('$id','$title','$type','$time','$body','$size','$material','$color', '$location', '$care', '$uName')";
         mysqli_query($con, $query2);
 
         if (mysqli_errno($con) != 0) 

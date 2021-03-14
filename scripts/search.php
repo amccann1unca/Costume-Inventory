@@ -78,9 +78,14 @@ output array are used to create an automatic download for the CSV file. */
         mysqli_close($con);
         ?>
         
-        <h2>Search Results</h2>
+        <form action="report.php" method="post">
+            <h3>To download this search for reporting click Download</h3>
+            <u><b>File Name:</b></u> <input type="text" name="fileName" required>
+            <input type="submit" name="report" value="Download">
+        </form>
         <br>
         
+        <h2>Search Results</h2>
         <table border="0" cellspacing="2" cellpadding="2">
             <tr> 
                 <th>ID</th>
@@ -91,6 +96,8 @@ output array are used to create an automatic download for the CSV file. */
                 <th>Size</th>
                 <th>Material</th>
                 <th>Color</th>
+                <th>Location</th>
+                <th>Care</th>
                 <th>Checked Out</th>
             </tr>
 
@@ -106,6 +113,8 @@ output array are used to create an automatic download for the CSV file. */
                 $size = $row['size'];
                 $material = $row['material'];
                 $color = $row['color'];
+                $location = $row['storageLocation'];
+                $care = $row['care'];
                 if ($row['checkedOut'] == 0)
                 {
                    $checkOut = 'No'; 
@@ -122,6 +131,8 @@ output array are used to create an automatic download for the CSV file. */
                 $output[$i]['size'] = $row['size'];
                 $output[$i]['material'] = $row['material'];
                 $output[$i]['color'] = $row['color'];
+                $output[$i]['storageLocation'] = $row['storageLocation'];
+                $output[$i]['care'] = $row['care'];
                 if ($row['checkedOut'] == 0)
                 {
                     $output[$i]['checkedOut'] = 'No'; 
@@ -142,6 +153,8 @@ output array are used to create an automatic download for the CSV file. */
                     <td><?php echo "$size"; ?></td>
                     <td><?php echo "$material"; ?></td>
                     <td><?php echo "$color"; ?></td>
+                    <td><?php echo "$location"; ?></td>
+                    <td><?php echo "$care"; ?></td>
                     <td><?php echo "$checkOut"; ?></td>
                 </tr>
             <?php
@@ -149,11 +162,5 @@ output array are used to create an automatic download for the CSV file. */
             $_SESSION['output'] = $output;
             ?>
         </table>
-        <br>
-        <form action="report.php" method="post">
-            <h2>To save this search click Save</h2>
-            <u><b>File Name:</b></u> <input type="text" name="fileName" required>
-            <input type="submit" name="report" value="Save">
-        </form>
     </body>
 </html>

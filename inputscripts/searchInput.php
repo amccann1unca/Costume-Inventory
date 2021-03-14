@@ -33,13 +33,13 @@ out status, the rest can be left blank.*/
                 invented in 1947. You could enter 1947 or 1950, but not
                 1950s.<br><br>
             <u><b>Character Body Type:</b></u> <input type="text" name="body" value="">
-            <u><b>Ex:</b></u> Masculine, Heavy Muscle; Feminine, Thin; Androgynous<br><br>
+            <u><b>Ex:</b></u> Masculine, Feminine, Thin, Androgynous<br><br>
             <u><b>Size:</b></u> <input type="text" name="size" value="">
             <u><b>Ex:</b></u> 3XL (shirt), 12 (dress), 42 (waist/men's pant)<br><br>
             <u><b>Material:</b></u> <input type="text" name="material" value="">
             <u><b>Ex:</b></u> Metal, Linen, Poly-Blend, Wood, Foam, Paper, Silk, ThermoPlastic<br><br>
             <u><b>Color:</b></u> <input type="text" name="color" value="">
-            <u><b>Ex:</b></u> white, green, indigo, merlow, darkpurple, lightred, pink<br><br><hr>
+            <u><b>Ex:</b></u> white, green, indigo, purple, red, pink<br><br><hr>
             <input type="submit" value="Search">
         </form>
     </body>

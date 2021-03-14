@@ -20,7 +20,7 @@ the user details previously given and passes them to deleteUser.php. */
         <link rel="stylesheet" href="../css/styleCI.css">
     </head>
     <div class="header">
-            <h1>UNCA Drama Department</h1>
+            <h1>UNCA Costume Department</h1>
     </div>
     <body>
         <?php
@@ -32,7 +32,7 @@ the user details previously given and passes them to deleteUser.php. */
             $_SESSION['firstType'] = mysqli_real_escape_string($con, $_REQUEST['userType']);
         ?>
         <form action="../scripts/deleteUser.php" method="post">
-            <h2>Details of the User to be Deleted</h2>
+            <h2>Please confirm the details of the user to be deleted</h2>
             <u><b>First Name</b></u><br>
                 <input type="text" name="firstName" required><br><br>
             <u><b>Last Name</b></u><br>

@@ -24,7 +24,7 @@ function queryGen($input)
         case 1;
             $column0 = $keys[0];
             $value0 = $input[$keys[0]];
-            $query = "SELECT * FROM Piece WHERE $column0 = '$value0'";
+            $query = "SELECT * FROM Piece WHERE $column0 = '$value0';";
             break;
             
         case 2;
@@ -34,10 +34,9 @@ function queryGen($input)
             $value1 = $input[$keys[1]];
             
             $query = "SELECT * 
-                      FROM (SELECT * 
-                            FROM Piece 
-                            WHERE $column0 = '$value0') AS temp
-                      WHERE $column1 = '$value1'";
+                      FROM Piece 
+                      WHERE $column0 = '$value0'
+                      AND $column1 = '$value1';";
             break;
         
         case 3;
@@ -49,12 +48,10 @@ function queryGen($input)
             $value2 = $input[$keys[2]];
             
             $query = "SELECT * 
-                      FROM (SELECT * 
-                            FROM (SELECT * 
-                                  FROM Piece 
-                                  WHERE $column0 = '$value0') AS temp
-                            WHERE $column1 = '$value1') AS temp
-                      WHERE $column2 = '$value2'";
+                      FROM Piece 
+                      WHERE $column0 = '$value0' 
+                      AND $column1 = '$value1'
+                      AND $column2 = '$value2';";
             break;
             
         case 4;
@@ -68,14 +65,11 @@ function queryGen($input)
             $value3 = $input[$keys[3]];
             
             $query = "SELECT * 
-                      FROM (SELECT * 
-                            FROM (SELECT * 
-                                  FROM (SELECT * 
-                                        FROM Piece 
-                                        WHERE $column0 = '$value0') As temp
-                                  WHERE $column1 = '$value1') AS temp 
-                            WHERE $column2 = '$value2') AS temp
-                      WHERE $column3 = '$value3'";
+                      FROM Piece 
+                      WHERE $column0 = '$value0'
+                      AND $column1 = '$value1'
+                      AND $column2 = '$value2'
+                      AND $column3 = '$value3';";
             break;
         
         case 5;
@@ -91,16 +85,12 @@ function queryGen($input)
             $value4 = $input[$keys[4]];
             
             $query = "SELECT * 
-                      FROM (SELECT * 
-                            FROM (SELECT * 
-                                  FROM (SELECT * 
-                                        FROM (SELECT * 
-                                              FROM Piece 
-                                              WHERE $column0 = '$value0') AS temp 
-                                        WHERE $column1 = '$value1') AS temp
-                                  WHERE $column2 = '$value2') AS temp
-                            WHERE $column3 = '$value3') AS temp
-                      WHERE $column4 = '$value4'";
+                      FROM Piece 
+                      WHERE $column0 = '$value0'
+                      AND $column1 = '$value1'
+                      AND $column2 = '$value2'
+                      AND $column3 = '$value3'
+                      AND $column4 = '$value4';";
             break;
             
         case 6;
@@ -118,18 +108,13 @@ function queryGen($input)
             $value5 = $input[$keys[5]];
             
             $query = "SELECT * 
-                      FROM (SELECT * 
-                            FROM (SELECT * 
-                                  FROM (SELECT * 
-                                        FROM (SELECT * 
-                                              FROM (SELECT * 
-                                                    FROM Piece 
-                                                    WHERE $column0 = '$value0') AS temp
-                                              WHERE $column1 = '$value1') AS temp
-                                        WHERE $column2 = '$value2') AS temp
-                                  WHERE $column3 = '$value3') AS temp
-                            WHERE $column4 = '$value4') AS temp
-                      WHERE $column5 = '$value5'";
+                      FROM Piece 
+                      WHERE $column0 = '$value0'
+                      AND $column1 = '$value1'
+                      AND $column2 = '$value2'
+                      AND $column3 = '$value3'
+                      AND $column4 = '$value4'
+                      AND $column5 = '$value5';";
             break;
         
         case 7;
@@ -149,20 +134,14 @@ function queryGen($input)
             $value6 = $input[$keys[6]];
             
             $query = "SELECT * 
-                      FROM (SELECT * 
-                            FROM (SELECT * 
-                                  FROM (SELECT * 
-                                        FROM (SELECT * 
-                                              FROM (SELECT * 
-                                                    FROM (SELECT * 
-                                                          FROM Piece 
-                                                          WHERE $column0 = '$value0') AS temp 
-                                                    WHERE $column1 = '$value1') AS temp
-                                              WHERE $column2 = '$value2') AS temp
-                                        WHERE $column3 = '$value3') AS temp
-                                  WHERE $column4 = '$value4') AS temp
-                            WHERE $column5 = '$value5') AS temp
-                      WHERE $column6 = '$value6'";
+                      FROM Piece 
+                      AND $column0 = '$value0'
+                      AND $column1 = '$value1'
+                      AND $column2 = '$value2'
+                      AND $column3 = '$value3'
+                      AND $column4 = '$value4'
+                      AND $column5 = '$value5'
+                      AND $column6 = '$value6';";
             break;
         
         case 8;
@@ -184,22 +163,15 @@ function queryGen($input)
             $value7 = $input[$keys[7]];
             
             $query = "SELECT * 
-                      FROM (SELECT * 
-                            FROM (SELECT * 
-                                  FROM (SELECT * 
-                                        FROM (SELECT * 
-                                              FROM (SELECT * 
-                                                    FROM (SELECT * 
-                                                          FROM (SELECT * 
-                                                                FROM Piece 
-                                                                WHERE $column0 = '$value0') AS temp 
-                                                          WHERE $column1 = '$value1') AS temp 
-                                                    WHERE $column2 = '$value2') AS temp
-                                              WHERE $column3 = '$value3') AS temp
-                                        WHERE $column4 = '$value4') AS temp
-                                  WHERE $column5 = '$value5') AS temp
-                            WHERE $column6 = '$value6') AS temp
-                      WHERE $column7 = '$value7'";
+                      FROM Piece 
+                      WHERE $column0 = '$value0'
+                      AND $column1 = '$value1'
+                      AND $column2 = '$value2'
+                      AND $column3 = '$value3'
+                      AND $column4 = '$value4'
+                      AND $column5 = '$value5'
+                      AND $column6 = '$value6'
+                      AND $column7 = '$value7';";
             break;
         
         case 9;
@@ -223,24 +195,16 @@ function queryGen($input)
             $value8 = $input[$keys[8]];
             
             $query = "SELECT * 
-                      FROM (SELECT * 
-                            FROM (SELECT * 
-                                  FROM (SELECT * 
-                                        FROM (SELECT * 
-                                              FROM (SELECT * 
-                                                    FROM (SELECT * 
-                                                          FROM (SELECT * 
-                                                                FROM (SELECT * 
-                                                                      FROM Piece 
-                                                                      WHERE $column0 = '$value0') AS temp 
-                                                                WHERE $column1 = '$value1') AS temp 
-                                                          WHERE $column2 = '$value2') AS temp 
-                                                    WHERE $column3 = '$value3') AS temp
-                                              WHERE $column4 = '$value4') AS temp
-                                        WHERE $column5 = '$value5') AS temp
-                                  WHERE $column6 = '$value6') AS temp
-                            WHERE $column7 = '$value7') AS temp
-                      WHERE $column8 = '$value8'";
+                      FROM Piece 
+                      WHERE $column0 = '$value0' 
+                      AND $column1 = '$value1'
+                      AND $column2 = '$value2' 
+                      AND $column3 = '$value3'
+                      AND $column4 = '$value4'
+                      AND $column5 = '$value5'
+                      AND $column6 = '$value6'
+                      AND $column7 = '$value7'
+                      AND $column8 = '$value8';";
             break;
     }
     return $query;

@@ -15,7 +15,7 @@ deleteConfirm.php for the user to reenter the pieceID. */
     
     <body>
         <form action="deleteConfirm.php" method="post">
-            <h2>Details of the Costume piece to be deleted</h2>
+            <h2>Please enter the details of the costume piece to be deleted</h2>
             <u><b>Piece ID</b></u><br>
                 <input type="text" name="pieceID" required><br><br><hr>
             <input type="submit" value="Delete">

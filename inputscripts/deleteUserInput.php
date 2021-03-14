@@ -15,7 +15,7 @@ to deleteUserConfirm.php. */
 <html>
     <body>
         <form action="deleteUserConfirm.php" method="post">
-            <h2>Details of the User to be Deleted</h2>
+            <h2>Please the details of the user to be deleted</h2>
             <u><b>First Name</b></u><br>
                 <input type="text" name="firstName" required><br><br>
             <u><b>Last Name</b></u><br>

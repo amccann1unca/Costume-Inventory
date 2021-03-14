@@ -23,7 +23,7 @@ and all students, and students can only see other students.*/
         <?php
         if ($_SESSION['type'] == 'admin')
         {
-            $query1 = "SELECT * FROM User WHERE userType = 'admin'";
+            $query1 = "SELECT * FROM Users WHERE userType = 'admin'";
             $result1 = mysqli_query($con, $query1);
         ?>
         
@@ -62,7 +62,7 @@ and all students, and students can only see other students.*/
         <?php
         if ($_SESSION['type'] != 'student')
         {
-            $query2 = "SELECT * FROM User WHERE userType = 'staff'";
+            $query2 = "SELECT * FROM Users WHERE userType = 'staff'";
             $result2 = mysqli_query($con, $query2);
         ?>
         
@@ -99,7 +99,7 @@ and all students, and students can only see other students.*/
         ?>
         
         <?php
-            $query3 = "SELECT * FROM User WHERE userType = 'student'";
+            $query3 = "SELECT * FROM Users WHERE userType = 'student'";
             $result3 = mysqli_query($con, $query3);
         ?>
 

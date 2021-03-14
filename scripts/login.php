@@ -20,7 +20,7 @@ are redirected back to index.html by forced header changes. */
     $uName = mysqli_real_escape_string($con, $_REQUEST['username']);
     $passWord = mysqli_real_escape_string($con, $_REQUEST['password']);
         
-    $query = "SELECT firstName, password, userType FROM User WHERE username = '$uName'";
+    $query = "SELECT firstName, password, userType FROM Users WHERE userName = '$uName'";
     $result = mysqli_query($con, $query);
     $row = mysqli_fetch_array($result);
         

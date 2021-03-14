@@ -20,7 +20,7 @@ in the delete.php script. */
         <link rel="stylesheet" href="../css/styleCI.css">
     </head>
     <div class="header">
-            <h1>UNCA Drama Department</h1>
+            <h1>UNCA Costume Department</h1>
     </div>
     <body>
         <?php
@@ -29,7 +29,7 @@ in the delete.php script. */
         $_SESSION['firstInput'] = mysqli_real_escape_string($con, $_REQUEST['pieceID']);
         ?>
         <form action="../scripts/delete.php" method="post">
-            <h2>Details of the Costume piece to be deleted</h2>
+            <h2>Please confirm the details of the costume piece to be deleted</h2>
             <u><b>Piece ID</b></u><br>
                 <input type="text" name="pieceID" required><br><br><hr>
             <input type="submit" value="Delete">
