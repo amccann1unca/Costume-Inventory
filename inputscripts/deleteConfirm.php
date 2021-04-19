@@ -20,7 +20,7 @@ in the delete.php script. */
         <link rel="stylesheet" href="../css/styleCI.css">
     </head>
     <div class="header">
-            <h1>UNCA Costume Department</h1>
+            <h1>UNCA Costume Inventory</h1>
     </div>
     <body>
         <?php

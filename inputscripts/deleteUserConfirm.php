@@ -20,7 +20,7 @@ the user details previously given and passes them to deleteUser.php. */
         <link rel="stylesheet" href="../css/styleCI.css">
     </head>
     <div class="header">
-            <h1>UNCA Costume Department</h1>
+            <h1>UNCA Costume Inventory</h1>
     </div>
     <body>
         <?php
