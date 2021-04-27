@@ -21,10 +21,46 @@ and all students, and students can only see other students.*/
 <html>
     <body>
         <?php
-        if ($_SESSION['type'] == 'admin')
+        switch ($_SESSION['type'])
         {
-            $query1 = "SELECT * FROM Users WHERE userType = 'admin'";
-            $result1 = mysqli_query($con, $query1);
+            case 'admin';
+                $query = "SELECT *
+                          FROM Users";
+                break;
+            case 'staff';
+                $query = "SELECT *
+                          FROM Users 
+                          WHERE userType = 'staff'
+                          AND userType = 'student'";
+                break;
+            case 'student';
+                $query = "SELECT * FROM Users WHERE userType = 'student'";
+                break;
+        }
+        
+        $result = mysqli_query($con, $query);
+        
+        while ($row = mysqli_fetch_array($result)) 
+        {
+            if ($row['userType'] == 'admin')
+            {
+                $i = 0;
+                $adminArray[$i] = $row;
+                $i++;
+            }
+            else if ($row['userType'] == 'staff')
+            {
+                $i = 0;
+                $staffArray[$i] = $row;
+                $i++;
+            }
+            else if ($row['userType'] == 'student')
+            {
+                $i = 0;
+                $studentArray[$i] = $row;
+                $i++;
+            }
+        }
         ?>
         
         <h2>Users</h2>
@@ -39,11 +75,13 @@ and all students, and students can only see other students.*/
             </tr>
 
             <?php
-            while ($row1 = mysqli_fetch_array($result1)) 
+            if (is_array($adminArray) && count($adminArray) > 0)
             {
-                $fname = $row1['firstName'];
-                $lname = $row1['lastName'];
-                $email = $row1['email'];
+                foreach ($adminArray as $row1) 
+                {
+                    $fname = $row1['firstName'];
+                    $lname = $row1['lastName'];
+                    $email = $row1['email'];
             ?>
 
                 <tr> 
@@ -52,19 +90,10 @@ and all students, and students can only see other students.*/
                     <td><?php echo "$email"; ?></td>
                 </tr>
             <?php
+                }
             }
             ?>
         </table>
-        <?php
-        }
-        ?>
-        
-        <?php
-        if ($_SESSION['type'] != 'student')
-        {
-            $query2 = "SELECT * FROM Users WHERE userType = 'staff'";
-            $result2 = mysqli_query($con, $query2);
-        ?>
         
         <br>
         <h3>Staff</h3>
@@ -78,11 +107,13 @@ and all students, and students can only see other students.*/
             </tr>
 
             <?php
-            while ($row2 = mysqli_fetch_array($result2)) 
+            if (is_array($staffArray) && count($staffArray) > 0)
             {
-                $fname = $row2['firstName'];
-                $lname = $row2['lastName'];
-                $email = $row2['email'];
+                foreach ($staffArray as $row2) 
+                {
+                    $fname = $row2['firstName'];
+                    $lname = $row2['lastName'];
+                    $email = $row2['email'];
             ?>
 
                 <tr> 
@@ -91,17 +122,10 @@ and all students, and students can only see other students.*/
                     <td><?php echo "$email"; ?></td>
                 </tr>
             <?php
+                }
             }
             ?>
         </table>
-        <?php
-        }
-        ?>
-        
-        <?php
-            $query3 = "SELECT * FROM Users WHERE userType = 'student'";
-            $result3 = mysqli_query($con, $query3);
-        ?>
 
         <br>
         <h3>Students</h3>
@@ -115,11 +139,13 @@ and all students, and students can only see other students.*/
             </tr>
 
             <?php
-            while ($row3 = mysqli_fetch_array($result3)) 
+            if (is_array($studentArray) && count($studentArray) > 0)
             {
-                $fname = $row3['firstName'];
-                $lname = $row3['lastName'];
-                $email = $row3['email'];
+                foreach ($studentArray as $row3) 
+                {
+                    $fname = $row3['firstName'];
+                    $lname = $row3['lastName'];
+                    $email = $row3['email'];
             ?>
 
                 <tr> 
@@ -128,6 +154,7 @@ and all students, and students can only see other students.*/
                     <td><?php echo "$email"; ?></td>
                 </tr>
             <?php
+                }
             }
             ?>
         </table>
